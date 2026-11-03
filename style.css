@@ -11,8 +11,17 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: red;
+    background-color: #8B5CF6;
     color:aquamarine;
+}
+
+.portfolio-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 90%;
+    margin: 100px auto 20px;
+    padding: 20px;
 }
 
 .profile img {
@@ -28,9 +37,17 @@ body {
     margin: 20px 0;
 }
 
+.content {
+    flex: 1;
+}
 
-.nsavbar {
-    background-color:blanchedalmond;
+.content section {
+    margin-bottom: 20px;
+}
+
+
+.navbar {
+    background-color: orange;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -59,16 +76,13 @@ body {
 }
 
 section {
-    padding: 80px 8%;
-    text-align: center;
+    padding: 20px 0;
+    text-align: left;
 }
 
 .hero {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: orange;
+    padding: 20px;
 }
 
 .hero h1 {
@@ -115,9 +129,9 @@ section {
     border-radius: 8px;
 }
 
-.projects container {
+.cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     margin-top: 30px;
 }
